@@ -2,8 +2,7 @@ cask "modeldial" do
   version "0.1.0,110,preview.11"
   sha256 "512b96af847065537d1d5e2db12147bb671a0a27bc5ec62a5ed733c1f0794062"
 
-  url "https://github.com/tianwdong/modeldial/releases/download/v#{version.csv.first}-#{version.csv.third}/modeldial-#{version.csv.first}-#{version.csv.third}-macos-arm64.dmg",
-      verified: "github.com/tianwdong/modeldial/"
+  url "https://github.com/tianwdong/modeldial/releases/download/v#{version.csv.first}-#{version.csv.third}/modeldial-#{version.csv.first}-#{version.csv.third}-macos-arm64.dmg"
   name "ModelDial"
   desc "Local-first AI coding model comparison and decision tool"
   homepage "https://modeldial.com/"
