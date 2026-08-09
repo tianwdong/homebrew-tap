@@ -60,8 +60,8 @@ brew audit --cask --new modeldial
 且仓库尚未达到官方知名度阈值；这两项不影响个人 Tap 使用，但意味着当前
 preview 不应被表述为官方 Cask。
 
-本地真实安装验证覆盖了 Release 下载及 SHA-256、临时目录安装、bundle
-版本／build／arm64、ad-hoc 签名结构、Sparkle feed／Ed25519 key、递归
-quarantine 移除、卸载和重装。它不替代公开远端命令、App 实际启动或
-Gatekeeper 干净机器验收；当前 preview Tap 与后续正式签名、公证的 stable
-Cask 需要分别验收。
+公开远端安装验证覆盖了 Tap 自动添加、单 Cask trust、Release 下载及
+SHA-256、临时目录安装、bundle 版本／build／arm64、ad-hoc 签名结构、
+Sparkle feed／Ed25519 key、递归 quarantine 移除、卸载和重装。它不替代
+App 实际启动或 Gatekeeper 干净机器验收；当前 preview Tap 与后续正式签名、
+公证的 stable Cask 需要分别验收。
