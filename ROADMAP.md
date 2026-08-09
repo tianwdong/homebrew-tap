@@ -5,7 +5,8 @@
 ## 当前状态
 
 - [x] 建立独立 Tap 候选目录，不修改 ModelDial 主仓。
-- [x] 添加最小 Cask，固定 `v0.1.0-preview.10` GitHub DMG 和 SHA-256。
+- [x] 添加最小 Cask，当前固定 `v0.1.0-preview.11` Build 110 GitHub DMG 和
+  SHA-256。
 - [x] 透明记录 unsigned/unnotarized、arm64、macOS Ventura+ 和 scoped
   `com.apple.quarantine` postflight 边界。
 - [x] 添加 Apache-2.0、目录规则和本地自检说明。
@@ -23,6 +24,9 @@
   `88f8f089cdd79fb6fcdb7cab5765db6076c3bd09`。
 - [x] 从公开远端使用完整限定命令重新安装，并复核 Cask URL、DMG SHA-256、
   单 Cask trust、quarantine、版本／架构、卸载和重装。
+- [x] 更新至 `v0.1.0-preview.11` 后完成 `ruby -c`、`brew style`、
+  `brew audit --strict`、临时 App 目录安装及 Build 110／arm64／quarantine
+  验收；Homebrew 6.0.15 的 `verified` 弃用已兼容。
 - [x] 远端命令验证成功后，已提交并发布 App README、Release 说明和官网中英文入口。
 
 ## 后续正式版本
