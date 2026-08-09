@@ -12,7 +12,7 @@ limited to the Cask and the documentation that explains the pinned release.
 - The Cask must pin one immutable release URL and its exact SHA-256. Do not
   silently retarget a different asset.
 - This candidate intentionally points at the unsigned/unnotarized
-  `v0.1.0-preview.10` preview. Do not describe it as a stable release,
+  `v0.1.0-preview.11` preview. Do not describe it as a stable release,
   Developer ID signed, notarized, or Gatekeeper-cleared package.
 
 ## Scoped postflight rule
