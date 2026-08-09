@@ -1,0 +1,12 @@
+# macOS and editor noise
+.DS_Store
+*.swp
+*.swo
+
+# Homebrew and local validation output
+.bundle/
+*.log
+
+# Local temporary downloads and test artifacts
+*.dmg
+*.zip
