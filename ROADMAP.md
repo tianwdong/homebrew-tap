@@ -23,7 +23,7 @@
   `88f8f089cdd79fb6fcdb7cab5765db6076c3bd09`。
 - [x] 从公开远端使用完整限定命令重新安装，并复核 Cask URL、DMG SHA-256、
   单 Cask trust、quarantine、版本／架构、卸载和重装。
-- [ ] 远端命令验证成功后，再提交／发布 App README、Release 说明和官网入口。
+- [x] 远端命令验证成功后，已提交并发布 App README、Release 说明和官网中英文入口。
 
 ## 后续正式版本
 
@@ -32,4 +32,4 @@
 - [ ] 在正式 stable 资产可用后完成 Homebrew 安装、卸载、重装和更新验收。
 
 当前不创建 workflow/CI；Tap 已公开并完成远端验证，App README、Release
-说明和官网入口仍待后续发布步骤。
+说明和官网中英文入口均已发布。正式 stable Cask 仍以签名、公证和干净机器验收为前置门槛。
