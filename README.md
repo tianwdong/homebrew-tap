@@ -3,21 +3,21 @@
 ModelDial 维护的个人 Homebrew Tap，当前只包含一个指向公开 GitHub Release
 资产的 Cask。
 
-> 当前暂停推荐安装。`preview.11` 在正常受保护 Mac 上存在嵌套运行时签名
-> 不兼容，可能导致本地组件无法启动；Cask 暂时保留现有远端资产身份，等待
-> `preview.12` 发布后再统一切换。
+> 当前 Cask 指向已验证的 `preview.12`。它修复了 `preview.11` 在正常受保护
+> Mac 上可能导致冻结后端和 Sparkle 组件无法加载的嵌套签名问题；本版仍是
+> unsigned／unnotarized 预览版，并非正式 stable 发行。
 
 ## 当前资产
 
-- 版本：`0.1.0-preview.11`（Build 110）
+- 版本：`0.1.0-preview.12`（Build 111）
 - 平台：macOS Ventura（13）及更高版本，Apple Silicon（arm64）
-- DMG：[`modeldial-0.1.0-preview.11-macos-arm64.dmg`](https://github.com/tianwdong/modeldial/releases/download/v0.1.0-preview.11/modeldial-0.1.0-preview.11-macos-arm64.dmg)
-- SHA-256：`512b96af847065537d1d5e2db12147bb671a0a27bc5ec62a5ed733c1f0794062`
-- 来源：GitHub Release [`v0.1.0-preview.11`](https://github.com/tianwdong/modeldial/releases/tag/v0.1.0-preview.11)
+- DMG：[`modeldial-0.1.0-preview.12-macos-arm64.dmg`](https://github.com/tianwdong/modeldial/releases/download/v0.1.0-preview.12/modeldial-0.1.0-preview.12-macos-arm64.dmg)
+- SHA-256：`aee58b52f33b94fc1da3c296cdb345ff59fe76a8e3343b4cd3f3aadb516f8b22`
+- 来源：GitHub Release [`v0.1.0-preview.12`](https://github.com/tianwdong/modeldial/releases/tag/v0.1.0-preview.12)
 
-Cask 内部使用 `version "0.1.0,110,preview.11"`，分别对应 App marketing
+Cask 内部使用 `version "0.1.0,111,preview.12"`，分别对应 App marketing
 version、build number 和 prerelease 标签；对外版本仍是
-`v0.1.0-preview.11`。
+`v0.1.0-preview.12`。
 
 这是临时预览版，不是 stable `v0.1.0`。该 DMG 只有 ad-hoc 签名，没有
 Developer ID 签名、Apple notarization、stapling 或 Intel 支持。安装前请
@@ -26,8 +26,7 @@ Developer ID 签名、Apple notarization、stapling 或 Intel 支持。安装前
 
 ## 安装
 
-以下命令是 Tap 的正式安装入口，但在 `preview.12` 发布并完成公开回下载前
-请勿执行：
+使用完整限定的一行命令安装：
 
 ```bash
 brew install --cask tianwdong/tap/modeldial
