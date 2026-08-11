@@ -11,8 +11,8 @@ limited to the Cask and the documentation that explains the pinned release.
   updater. ModelDial owns in-app updates through Sparkle.
 - The Cask must pin one immutable release URL and its exact SHA-256. Do not
   silently retarget a different asset.
-- This candidate intentionally points at the unsigned/unnotarized
-  `v0.1.0-preview.11` preview. Do not describe it as a stable release,
+- This Tap intentionally points at the current unsigned/unnotarized
+  `v0.1.0-preview.13` preview. Do not describe it as a stable release,
   Developer ID signed, notarized, or Gatekeeper-cleared package.
 
 ## Scoped postflight rule
