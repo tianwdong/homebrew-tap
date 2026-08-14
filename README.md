@@ -3,21 +3,21 @@
 ModelDial 维护的个人 Homebrew Tap，当前只包含一个指向公开 GitHub Release
 资产的 Cask。
 
-> 当前 Cask 指向已验证的 `preview.14`。它保留 `preview.12` 的嵌套签名修复，
+> 当前 Cask 指向已验证的 `preview.15`。它保留 `preview.12` 的嵌套签名修复，
 > 并加固全新用户首次启动、官方 Radar 优先刷新和损坏状态恢复；本版仍是
 > unsigned／unnotarized 预览版，并非正式 stable 发行。
 
 ## 当前资产
 
-- 版本：`0.1.0-preview.14`（Build 113）
+- 版本：`0.1.0-preview.15`（Build 114）
 - 平台：macOS Ventura（13）及更高版本，Apple Silicon（arm64）
-- DMG：[`modeldial-0.1.0-preview.14-macos-arm64.dmg`](https://github.com/tianwdong/modeldial/releases/download/v0.1.0-preview.14/modeldial-0.1.0-preview.14-macos-arm64.dmg)
-- SHA-256：`40bc120e75cd2607fd833f6393ca0cef258fb50a6c2fe55c2e64b698f8e88931`
-- 来源：GitHub Release [`v0.1.0-preview.14`](https://github.com/tianwdong/modeldial/releases/tag/v0.1.0-preview.14)
+- DMG：[`modeldial-0.1.0-preview.15-macos-arm64.dmg`](https://github.com/tianwdong/modeldial/releases/download/v0.1.0-preview.15/modeldial-0.1.0-preview.15-macos-arm64.dmg)
+- SHA-256：`807059c1ade5511a5843c86a9fc5926682a270a202eb5713ad73986ee284016e`
+- 来源：GitHub Release [`v0.1.0-preview.15`](https://github.com/tianwdong/modeldial/releases/tag/v0.1.0-preview.15)
 
-Cask 内部使用 `version "0.1.0,113,preview.14"`，分别对应 App marketing
+Cask 内部使用 `version "0.1.0,114,preview.15"`，分别对应 App marketing
 version、build number 和 prerelease 标签；对外版本仍是
-`v0.1.0-preview.14`。
+`v0.1.0-preview.15`。
 
 这是临时预览版，不是 stable `v0.1.0`。该 DMG 只有 ad-hoc 签名，没有
 Developer ID 签名、Apple notarization、stapling 或 Intel 支持。安装前请

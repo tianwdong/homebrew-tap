@@ -1,6 +1,6 @@
 cask "modeldial" do
-  version "0.1.0,113,preview.14"
-  sha256 "40bc120e75cd2607fd833f6393ca0cef258fb50a6c2fe55c2e64b698f8e88931"
+  version "0.1.0,114,preview.15"
+  sha256 "807059c1ade5511a5843c86a9fc5926682a270a202eb5713ad73986ee284016e"
 
   url "https://github.com/tianwdong/modeldial/releases/download/v#{version.csv.first}-#{version.csv.third}/modeldial-#{version.csv.first}-#{version.csv.third}-macos-arm64.dmg"
   name "ModelDial"
@@ -25,13 +25,13 @@ cask "modeldial" do
   end
 
   caveats <<~EOS
-    This is ModelDial v0.1.0-preview.14, an unsigned and unnotarized preview.
+    This is ModelDial v0.1.0-preview.15, an unsigned and unnotarized preview.
     It has no Developer ID signature, Apple notarization, stapling, or Intel support.
 
     The DMG is the exact GitHub Release asset:
-    https://github.com/tianwdong/modeldial/releases/tag/v0.1.0-preview.14
+    https://github.com/tianwdong/modeldial/releases/tag/v0.1.0-preview.15
     SHA-256:
-    40bc120e75cd2607fd833f6393ca0cef258fb50a6c2fe55c2e64b698f8e88931
+    807059c1ade5511a5843c86a9fc5926682a270a202eb5713ad73986ee284016e
 
     The legacy postflight removes com.apple.quarantine recursively only from
     #{appdir}/modeldial.app. It uses no sudo, does not disable or change
