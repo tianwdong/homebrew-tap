@@ -1,11 +1,11 @@
 # ModelDial Homebrew Tap Roadmap
 
-最后更新：2026-08-11
+最后更新：2026-08-28
 
 ## 当前状态
 
 - [x] 建立独立 Tap 候选目录，不修改 ModelDial 主仓。
-- [x] 添加最小 Cask，当前固定 `v0.1.0-preview.13` Build 112 GitHub DMG 和
+- [x] 添加最小 Cask，当前固定 `v0.1.0-preview.16` Build 115 GitHub DMG 和
   SHA-256。
 - [x] 透明记录 unsigned/unnotarized、arm64、macOS Ventura+ 和 scoped
   `com.apple.quarantine` postflight 边界。
@@ -32,6 +32,13 @@
   `ruby -c`、`brew style`、`brew audit --strict` 和两轮隔离目录安装／卸载／
   重装均通过；App 为 arm64／macOS 13+、深层签名有效且无 quarantine，
   Homebrew formula 清单在两轮测试前后保持一致。
+- [x] 更新至 `v0.1.0-preview.16`／Build 115；Cask 固定公开 DMG
+  SHA-256 `2ede98f19b1361c48c9cdc20687d2bf6eff92cebd163f7450b34219dd18c1640`，
+  远端 Tap 提交为 `707272a17c49a923652ad962e54268077cda0e20`。
+  `ruby -c`、`brew style` 和两轮隔离目录安装／卸载／重装均通过；App
+  来源提交为 `1cba503bafad722e77a994c4d5341135f54d97ba`，Build 115／arm64、
+  深层签名有效且无 quarantine。Homebrew formula／cask 清单恢复至测试前状态，
+  `/Applications/modeldial.app` 保持 Build 114 未被覆盖。
 - [x] 远端命令验证成功后，已提交并发布 App README、Release 说明和官网中英文入口。
 
 ## 后续正式版本
@@ -40,6 +47,6 @@
 - [ ] 使用同一正式 stable DMG、不可变 URL 和精确 SHA-256 更新 Cask。
 - [ ] 在正式 stable 资产可用后完成 Homebrew 安装、卸载、重装和更新验收。
 
-当前不创建 workflow/CI；Tap 已公开并完成 `preview.13` 远端验证，App
+当前不创建 workflow/CI；Tap 已公开并完成 `preview.16` 远端验证，App
 README、Release 说明和官网中英文入口均使用同一发布身份。正式 stable
 Cask 仍以签名、公证和干净机器验收为前置门槛。
